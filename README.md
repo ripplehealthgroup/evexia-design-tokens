@@ -1,4 +1,4 @@
-# design-tokens
+# Calm Health Design Tokens
 Cross-platform design tokens
 
 ## TODO
