@@ -21,8 +21,10 @@ export enum DS_SHAPE_BORDER_RADIUS {
 
 /* Breakpoints */
 export enum DS_BREAKPOINT {
+  INTRA = 0,
   MOBILE = 375,
-  DESKTOP = 1440,
+  DESKTOP = 840,
+  ULTRA = 1440,
 }
 
 /* Font */
