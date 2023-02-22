@@ -1,7 +1,7 @@
 {
   "name": "@ripplehealthgroup/evexia-design-tokens",
   "version": "1.0.0",
-  "description": "Calm Health design tokens for Typescript.",
+  "description": "Evexia design tokens for Typescript.",
   "main": "build/main/index.js",
   "typings": "build/main/index.d.ts",
   "module": "build/module/index.js",

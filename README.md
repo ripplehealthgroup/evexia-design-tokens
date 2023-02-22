@@ -1,4 +1,4 @@
-# Calm Health Design Tokens
+# Evexia Design Tokens
 Cross-platform design tokens
 
 ## TODO
