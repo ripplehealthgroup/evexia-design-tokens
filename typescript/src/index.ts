@@ -26,7 +26,7 @@ export enum DS_BREAKPOINT {
   /** Very small viewports */
   INTRA = 0,
   /** Phones in portrait mode */
-  COMPACT = 375,
+  SMALL = 375,
   /** Tablet in portrait mode */
   MEDIUM = 600,
   /** Phone in landscape, tablet in landscape, desktop */
