@@ -1,4 +1,4 @@
-/* Shape */
+/** Heights of various elements in px */
 export enum DS_HEIGHT {
   AVATAR_LARGE = 48,
   AVATAR_SMALL = 40,
@@ -8,10 +8,12 @@ export enum DS_HEIGHT {
   BUTTON_SMALL = 32,
 }
 
+/** Basic unit of spacing in px */
 export enum DS_SHAPE_SPACING {
   NORMAL = 4,
 }
 
+/** Used in border-radius in px */
 export enum DS_SHAPE_BORDER_RADIUS {
   NORMAL = 4,
   BUTTON_LARGE = DS_HEIGHT.BUTTON_LARGE / 2,
@@ -19,18 +21,25 @@ export enum DS_SHAPE_BORDER_RADIUS {
   BUTTON_SMALL = DS_HEIGHT.BUTTON_SMALL / 2,
 }
 
-/* Breakpoints */
+/** Viewport breakpoints in px */
 export enum DS_BREAKPOINT {
+  /** Very small viewports */
   INTRA = 0,
-  MOBILE = 375,
-  DESKTOP = 840,
+  /** Phones in portrait mode */
+  COMPACT = 375,
+  /** Tablet in portrait mode */
+  MEDIUM = 600,
+  /** Phone in landscape, tablet in landscape, desktop */
+  LARGE = 840,
+  /** Very large viewports, used to determine when a layout should stop expanding */
   ULTRA = 1440,
 }
 
-/* Font */
+/** Used in font-family  */
 export const DS_FONT_FAMILY =
   '-apple-system, AvenirNext, Arial, BlinkMacSystemFont, Helvetica Neue, Helvetica, sans-serif';
 
+/** Used in font-size in px */
 export enum DS_FONT_SIZE {
   H1 = 96,
   H2 = 60,
@@ -48,6 +57,7 @@ export enum DS_FONT_SIZE {
   TOOLTIP = 10,
 }
 
+/** Used in letter-spacing */
 export enum DS_LETTER_SPACING {
   L_2 = '-1.5px',
   L_1 = '-0.5px',
@@ -61,6 +71,7 @@ export enum DS_LETTER_SPACING {
   L7 = '1px',
 }
 
+/** Used in font-weight */
 export enum DS_FONT_WEIGHT {
   ULTRA_LIGHT = 100,
   LIGHT = 300,
@@ -71,7 +82,7 @@ export enum DS_FONT_WEIGHT {
   ULTRA_BOLD = 900,
 }
 
-/* Colors */
+/** Colors available to use in 6 or 8 digit hex */
 export enum DS_COLOR {
   /**
    * LIGHT THEME
@@ -319,6 +330,7 @@ export enum DS_COLOR {
   DARK_SNACKBAR_BACKGROUND = '#323232',
 }
 
+/** Available gradients, can be used in the background property */
 export enum DS_GRADIENT {
   LIGHT_PRIMARY = 'linear-gradient(135deg, #7D84FF 0%, #282CC4 100%)',
   LIGHT_SECONDARY = 'linear-gradient(135deg, #A67AEB 0%, #592B9A 100%)',
