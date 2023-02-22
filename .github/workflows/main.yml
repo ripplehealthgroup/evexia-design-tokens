@@ -33,7 +33,7 @@ jobs:
       uses: actions/checkout@v2
 
     - name: Setup node
-      uses: actions/setup-node@v1
+      uses: actions/setup-node@v3
       with:
         node-version: '14.x'
         registry-url: 'https://npm.pkg.github.com'
@@ -48,4 +48,3 @@ jobs:
       run: yarn --cwd typescript publish
       env:
         NODE_AUTH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-

@@ -1,11 +1,11 @@
 {
-  "name": "calm-health-design-tokens",
+  "name": "@ripplehealthgroup/evexia-design-tokens",
   "version": "1.0.0",
   "description": "Calm Health design tokens for Typescript.",
   "main": "build/main/index.js",
   "typings": "build/main/index.d.ts",
   "module": "build/module/index.js",
-  "repository": "https://github.com/ripplehealthgroup/calm-health-design-tokens",
+  "repository": "https://github.com/ripplehealthgroup/evexia-design-tokens",
   "license": "NONE",
   "keywords": [],
   "scripts": {
