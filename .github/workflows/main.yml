@@ -21,6 +21,9 @@ jobs:
     - name: Fix Package to ensure there were no errors
       run: yarn --cwd typescript fix
 
+    - name: Build
+      run: yarn --cwd typescript build
+
   publish-typescript:
     if: github.ref == 'refs/heads/main'
     name: Publish Typescript Library
@@ -43,6 +46,9 @@ jobs:
 
     - name: Fix Package to ensure there were no errors
       run: yarn --cwd typescript fix
+
+    - name: Build
+      run: yarn --cwd typescript build
 
     - name: Publish package
       run: yarn --cwd typescript publish
