@@ -340,5 +340,5 @@ export enum DS_GRADIENT {
   DARK_SECONDARY = 'linear-gradient(135deg, #A67AEB 0%, #592B9A 100%)',
   DARK_INFO = 'linear-gradient(180deg, #007DB8 0%, #006495 100%)',
 
-  CALM = 'background: linear-gradient(107.56deg, #4667C4 0%, #5286D7 49.48%, #7193DF 100%),linear-gradient(50.52deg, #BB91E9 1.06%, rgba(187, 145, 233, 0) 42.51%),linear-gradient(252.44deg, #C8E7FF 0%, rgba(84, 132, 213, 0) 50%)',
+  CALM_HEALTH = 'linear-gradient(252.44deg, #C8E7FF 0%, rgba(84, 132, 213, 0) 50%), linear-gradient(50.52deg, #BB91E9 1.06%, rgba(187, 145, 233, 0) 42.51%), linear-gradient(107.56deg, #4667C4 0%, #5286D7 49.48%, #7193DF 100%)'
 }
