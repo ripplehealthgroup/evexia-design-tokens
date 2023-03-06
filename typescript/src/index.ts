@@ -1,15 +1,3 @@
-/** Heights of various elements in px */
-export enum DS_HEIGHT {
-  AVATAR_LARGE = 48,
-  AVATAR_SMALL = 40,
-
-  BUTTON_LARGE = 48,
-  BUTTON_MEDIUM = 36,
-  BUTTON_SMALL = 32,
-
-  TOOLBAR = 64,
-}
-
 /** units of spacing in px */
 export enum DS_SHAPE_SPACING {
   /** Basic unit */
@@ -34,6 +22,59 @@ export enum DS_SHAPE_SPACING {
   SIDE_MEDIUM = 24,
   /** Between edge of viewport and content small to medium breakpoint and below */
   SIDE_SMALL = 16,
+}
+
+/** units of spacing in base spacing units */
+export enum DS_SPACING_UNITS {
+  /** Basic unit */
+  BASE = 1,
+
+  /** Between section and next section */
+  SECTION = DS_SHAPE_SPACING.SECTION / DS_SHAPE_SPACING.BASE,
+  /** Between title/heading and descriptive text */
+  HEADING_DESCRIPTION = DS_SHAPE_SPACING.HEADING_DESCRIPTION /
+    DS_SHAPE_SPACING.BASE,
+
+  /** Between heading and content on desktop */
+  HEADING_CONTENT_DESKTOP = DS_SHAPE_SPACING.HEADING_CONTENT_DESKTOP /
+    DS_SHAPE_SPACING.BASE,
+  /** Between heading and content on mobile */
+  HEADING_CONTENT_MOBILE = DS_SHAPE_SPACING.HEADING_CONTENT_MOBILE /
+    DS_SHAPE_SPACING.BASE,
+
+  /** Between pieces of related content */
+  CONTENT = DS_SHAPE_SPACING.CONTENT / DS_SHAPE_SPACING.BASE,
+
+  /** Between edge of viewport and content > large breakpoint */
+  SIDE_LARGE = DS_SHAPE_SPACING.SIDE_LARGE / DS_SHAPE_SPACING.BASE,
+  /** Between edge of viewport and content medium to large breakpoint */
+  SIDE_MEDIUM = DS_SHAPE_SPACING.SIDE_MEDIUM / DS_SHAPE_SPACING.BASE,
+  /** Between edge of viewport and content small to medium breakpoint and below */
+  SIDE_SMALL = DS_SHAPE_SPACING.SIDE_SMALL / DS_SHAPE_SPACING.BASE,
+}
+
+/** Heights of various elements in px */
+export enum DS_HEIGHT {
+  AVATAR_LARGE = 48,
+  AVATAR_SMALL = 40,
+
+  BUTTON_LARGE = 48,
+  BUTTON_MEDIUM = 36,
+  BUTTON_SMALL = 32,
+
+  TOOLBAR = 64,
+}
+
+/** Heights of various elements in units of spacing */
+export enum DS_HEIGHT_UNITS {
+  AVATAR_LARGE = DS_HEIGHT.AVATAR_LARGE / DS_SHAPE_SPACING.BASE,
+  AVATAR_SMALL = DS_HEIGHT.AVATAR_SMALL / DS_SHAPE_SPACING.BASE,
+
+  BUTTON_LARGE = DS_HEIGHT.BUTTON_LARGE / DS_SHAPE_SPACING.BASE,
+  BUTTON_MEDIUM = DS_HEIGHT.BUTTON_MEDIUM / DS_SHAPE_SPACING.BASE,
+  BUTTON_SMALL = DS_HEIGHT.BUTTON_SMALL / DS_SHAPE_SPACING.BASE,
+
+  TOOLBAR = DS_HEIGHT.TOOLBAR / DS_SHAPE_SPACING.BASE,
 }
 
 /** Used in border-radius in px */
