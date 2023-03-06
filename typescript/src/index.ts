@@ -6,11 +6,34 @@ export enum DS_HEIGHT {
   BUTTON_LARGE = 48,
   BUTTON_MEDIUM = 36,
   BUTTON_SMALL = 32,
+
+  TOOLBAR = 64,
 }
 
-/** Basic unit of spacing in px */
+/** units of spacing in px */
 export enum DS_SHAPE_SPACING {
-  NORMAL = 4,
+  /** Basic unit */
+  BASE = 4,
+
+  /** Between section and next section */
+  SECTION = 40,
+  /** Between title/heading and descriptive text */
+  HEADING_DESCRIPTION = 8,
+
+  /** Between heading and content on desktop */
+  HEADING_CONTENT_DESKTOP = 24,
+  /** Between heading and content on mobile */
+  HEADING_CONTENT_MOBILE = 16,
+
+  /** Between pieces of related content */
+  CONTENT = 24,
+
+  /** Between edge of viewport and content > large breakpoint */
+  SIDE_LARGE = 32,
+  /** Between edge of viewport and content medium to large breakpoint */
+  SIDE_MEDIUM = 24,
+  /** Between edge of viewport and content small to medium breakpoint and below */
+  SIDE_SMALL = 16,
 }
 
 /** Used in border-radius in px */
@@ -340,5 +363,5 @@ export enum DS_GRADIENT {
   DARK_SECONDARY = 'linear-gradient(135deg, #A67AEB 0%, #592B9A 100%)',
   DARK_INFO = 'linear-gradient(180deg, #007DB8 0%, #006495 100%)',
 
-  CALM_HEALTH = 'linear-gradient(252.44deg, #C8E7FF 0%, rgba(84, 132, 213, 0) 50%), linear-gradient(50.52deg, #BB91E9 1.06%, rgba(187, 145, 233, 0) 42.51%), linear-gradient(107.56deg, #4667C4 0%, #5286D7 49.48%, #7193DF 100%)'
+  CALM_HEALTH = 'linear-gradient(252.44deg, #C8E7FF 0%, rgba(84, 132, 213, 0) 50%), linear-gradient(50.52deg, #BB91E9 1.06%, rgba(187, 145, 233, 0) 42.51%), linear-gradient(107.56deg, #4667C4 0%, #5286D7 49.48%, #7193DF 100%)',
 }
