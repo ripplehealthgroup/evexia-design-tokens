@@ -79,7 +79,10 @@ export enum DS_HEIGHT_UNITS {
 
 /** Used in border-radius in px */
 export enum DS_SHAPE_BORDER_RADIUS {
-  NORMAL = 4,
+  SMALL = 4,
+  MEDIUM = 8,
+  LARGE = 12,
+  CARD = 12,
   BUTTON_LARGE = DS_HEIGHT.BUTTON_LARGE / 2,
   BUTTON_MEDIUM = DS_HEIGHT.BUTTON_MEDIUM / 2,
   BUTTON_SMALL = DS_HEIGHT.BUTTON_SMALL / 2,
