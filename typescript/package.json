@@ -1,6 +1,6 @@
 {
   "name": "@ripplehealthgroup/evexia-design-tokens",
-  "version": "1.0.12",
+  "version": "1.0.13",
   "description": "Evexia design tokens for Typescript.",
   "main": "build/main/index.js",
   "typings": "build/main/index.d.ts",
